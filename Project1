@@ -1,0 +1,32 @@
+service> Hello. What is your name?
+* greeting
+
+user> [Mukil](name)
+* provide_name
+
+service> Hello [Mukil](name), how are you doing?
+* greeting
+
+user> user> Good
+*provide_feeling
+
+user> service> That's nice to hear. What would you like to know?
+*question
+
+user> user> The time
+*check_time
+
+user> service> Where do you live?
+*onboarding_prompt_city
+
+user> user> Boston
+*provide_city
+
+user> service> The time in Boston is 7:30. Is there anything else you would like to know?
+*provide_time
+
+user> user> Nothing today. Thank you.
+*goodbye
+
+user> service> Goodbye.
+*goodbye
